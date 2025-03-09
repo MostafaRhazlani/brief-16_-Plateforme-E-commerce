@@ -88,9 +88,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="sing-in-btn">
-                            <a href="/login" class="btn1">Sign in</a>
-                        </div>
+                        <a href="#" class="logout">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                        </a>
                     </div>
                 </div>
             </div>

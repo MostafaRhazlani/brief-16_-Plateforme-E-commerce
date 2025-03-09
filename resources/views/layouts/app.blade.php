@@ -15,6 +15,7 @@
 
     <!-- Place favicon.ico in the root directory -->
     <link rel="shortcut icon" type="image/icon" href="{{ asset('images/icons/03.png') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- All css Here -->
     <!-- All plugins css -->
@@ -30,19 +31,9 @@
 
     <!-- Modernizr JavaScript -->
     <script src="{{ asset('js/vendor/modernizr-2.8.3.min.js') }}"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-                <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-                <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-            <![endif]-->
 </head>
 
 <body>
-    <!--[if lt IE 8]>
-                <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-            <![endif]-->
     <div id="preloader">
         <div id="status"><img src="{{ asset('images/logo/preloader.gif') }}" id="preloader_image" alt="loader">
         </div>
