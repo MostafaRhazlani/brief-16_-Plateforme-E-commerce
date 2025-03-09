@@ -20,3 +20,4 @@ Route::get('/shop', function () {
 
 Route::post('/register/user', [AuthController::class, 'register'])->name('register');
 Route::post('/login/user', [AuthController::class, 'login'])->name('login');
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');

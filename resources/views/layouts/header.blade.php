@@ -88,9 +88,14 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="logout">
-                            <i class="fa-solid fa-right-from-bracket"></i>
-                        </a>
+                        @if (session('user'))
+                            <form action="{{ route('logout') }}" method="post">
+                                @csrf
+                                <button class="logout">
+                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                </button>
+                            </form>
+                        @endif
                     </div>
                 </div>
             </div>

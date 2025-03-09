@@ -48,4 +48,8 @@ class AuthController extends Controller
         }
     }
 
+    public function logout() {
+        session()->forget('user');
+        return redirect()->route('login.form');
+    }
 }
