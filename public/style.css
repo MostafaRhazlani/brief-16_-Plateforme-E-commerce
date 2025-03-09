@@ -52,7 +52,6 @@ body {
   vertical-align: baseline;
   line-height: 26px;
   font-weight: 400;
-  overflow-X:hidden;
   background-color: #000;
 
 }
@@ -2111,6 +2110,8 @@ header.header-inner {
 }
 
 header .main-header {
+  display: flex;
+  justify-content: end;
   text-align: right;
   line-height: 175px;
   height: 175px;
@@ -2198,6 +2199,12 @@ header .main-header .main-menus nav .mamnu li:hover ul li a {
   line-height: 40px;
   height: 40px;
   transition: all 0.3s;
+}
+
+header .logout {
+    color: #878244;
+    font-size: 18px;
+    background: none;
 }
 header .main-header .serach-header {
   display: inline-block;
