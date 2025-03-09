@@ -23,10 +23,29 @@ class AuthController extends Controller
             'full_name' => $validated['full_name'],
             'email' => $validated['email'],
             'phone' => $validated['phone'],
+            'role' => 'user',
             'password' => Hash::make($validated['password'])
         ]);
 
-        return redirect()->route('login');
+        return redirect()->route('login.form');
     }
-    
+
+    public function login(Request $request) {
+        $validated = $request->validate([
+            'email' => 'required|email',
+            'password' => 'required|min:4|max:12',
+        ]);
+
+        $user = User::where('email', $validated['email'])->first();
+
+        if($user && Hash::check($validated['password'], $user->password)) {
+            session(['user' => $user]);
+            if($user['role'] === 'user') {
+                return redirect()->route('home');
+            }
+        } else {
+            return redirect()->route('login.form');
+        }
+    }
+
 }

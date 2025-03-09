@@ -37,7 +37,7 @@
                             <div class="jp_regiter_top_heading">
                                 <p>Fields with * are mandetory </p>
                             </div>
-                            <form action="{{ route('reg') }}" method="post">
+                            <form action="{{ route('register') }}" method="post">
                                 @csrf
                                 <div class="row clearfix">
                                     <!--Form Group-->
